@@ -1,0 +1,29 @@
+@font-face{
+  font-family: 'SL-Light';
+  src: url('Webfonts/EOT/Superlative-Light.eot');
+  src: url('Webfonts/EOT/Superlative-Light.eot?#iefix') format('embedded-opentype'),
+      url('Webfonts/WOFF/Superlative-Light.woff') format('woff'),
+      url('Webfonts/WOFF2/Superlative-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'SL-Regular';
+  src: url('Webfonts/EOT/Superlative-Regular.eot');
+  src: url('Webfonts/EOT/Superlative-Regular.eot?#iefix') format('embedded-opentype'),
+      url('Webfonts/WOFF/Superlative-Regular.woff') format('woff'),
+      url('Webfonts/WOFF2/Superlative-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'SL-Regular-Condensed';
+  src: url('Webfonts/EOT/Superlative-RegularCondensed.eot');
+  src: url('Webfonts/EOT/Superlative-RegularCondensed.eot?#iefix') format('embedded-opentype'),
+      url('Webfonts/WOFF/Superlative-RegularCondensed.woff') format('woff'),
+      url('Webfonts/WOFF2/Superlative-RegularCondensed.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

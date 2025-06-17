@@ -1,0 +1,29 @@
+
+body{
+  margin: 0;
+  background-color: var(--black);
+}
+.blurb-section{
+  border-bottom: 1px solid #353535;
+  padding: 2rem 0rem 16rem 0rem;
+}
+#title {
+  padding: 5rem 1rem 2rem 1rem;
+}
+.qualifications-row{
+  padding: 2rem 0rem 2rem 0rem;
+  display: grid;
+  grid-template-columns: 2fr 12fr 2fr;
+}
+.qualifications-row>*{
+  padding: 0rem 1rem;
+}
+
+
+@media (max-width: 1024px) {
+  .qualifications-row{
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
