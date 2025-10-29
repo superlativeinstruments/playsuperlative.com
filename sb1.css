@@ -8,7 +8,7 @@ body {
 body.startPage{
   height: 100vh;
   overflow: hidden;
-} 
+}
 #start{
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body.startPage{
   transition: margin-top 1s;
 }
 .disappearing_holder.hidden{
-  margin-top: -12rem;  
+  margin-top: -12rem;
 }
 
 /* Kickstarter overlay */
@@ -93,7 +93,7 @@ body.startPage{
 
 /* Introducing... */
 .click_to_start{
-  cursor: pointer;  
+  cursor: pointer;
 }
 #title_click {
   padding: 0rem 1rem 1rem 1rem;
@@ -142,9 +142,9 @@ body.startPage{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: 
-      "connect col1" 
-      "col2 ." 
+    grid-template-areas:
+      "connect col1"
+      "col2 ."
       "crafted crafted";
   }
 
@@ -183,7 +183,7 @@ body.startPage{
   }
   body.startPage{
     height: 200vh;
-  }  
+  }
   #start{
     height: 200vh;
     overflow: scroll;
@@ -203,8 +203,6 @@ body.startPage{
 }
 .detail_img{
   width: 100%;
-  /* Hack to get images not to stretch, can also use object-fit: contain but it adds extra padding. */
-  height: calc((100vw - 8rem)/4 * 3/2);
   padding: 1rem 0rem;
 }
 .kf_header{
@@ -248,7 +246,7 @@ body.startPage{
 
 .bottom_details{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .bottom_details>*{
   padding: 0rem 1rem 1rem 1rem;
@@ -422,13 +420,13 @@ body.startPage{
 }
 
 .spec :last-child{
-  padding-bottom: 1.33333rem;  
+  padding-bottom: 1.33333rem;
 }
 .spec:last-child :last-child{
-  padding-bottom: 0rem;  
+  padding-bottom: 0rem;
 }
 .spec>*{
-  padding: 0rem 1rem; 
+  padding: 0rem 1rem;
 }
 
 @media (max-width: 1024px) {

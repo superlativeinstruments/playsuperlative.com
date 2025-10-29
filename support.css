@@ -5,7 +5,7 @@ body{
 }
 
 .blurb {
-  padding: 2rem 0rem 16rem 0rem;
+  padding: 2rem 0rem 8rem 0rem;
   display: grid;
   grid-template-columns: 8fr 7fr 1fr
 }
@@ -14,7 +14,7 @@ body{
   padding: 0rem 1rem;
 }
 
-.section{
+.section {
   border-bottom: 1px solid #353535;
   padding: 2rem 0rem 8rem 0rem;
 }
@@ -27,7 +27,7 @@ body{
   padding: 0rem 1rem;
 }
 
-.job{
+.job {
   padding-bottom: 2rem;
 }
 
@@ -42,12 +42,13 @@ body{
   }
 }
 
-.blurb-section{
+.blurb-section {
   border-bottom: 1px solid #353535;
 }
 
-#title {
-  padding: 5rem 1rem 2rem 1rem;
+.blurb-section .headline,
+.section .headline {
+  padding: 5rem 1rem 8rem 1rem;
 }
 
 .source {
