@@ -456,8 +456,14 @@ body.startPage{
 }
 
 @media (max-width: 1024px) {
-  #exploded_vid, #exploded_overlay{
-    width: 180%;
-    transform: translate(-20%);
+  #exploded_vid {
+    position: relative;
+    width: 180% !important;
+    height: auto !important;
+    transform: translate(-22%);
+  }
+  #exploded_overlay {
+    width: 180% !important;
+    transform: translate(-22%);
   }
 }
