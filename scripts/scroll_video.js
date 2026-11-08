@@ -1,11 +1,19 @@
 $(() => {
   let shouldPlay = true;
+  let overlayShown = false;
   const video = $('#exploded_vid');
   const overlay = $('#exploded_overlay');
   const height = video.height();
   let windowHeight = $(window).height();
-  // Stop the video when it gets halfway, if we're playing from the beginning
-  video.on("ended", () => overlay.removeClass('hidden'));
+
+  // Show the overlay once the video has played for 1 second
+  video.on('timeupdate', () => {
+    if (!overlayShown && video[0].currentTime >= 1.2) {
+      overlayShown = true;
+      overlay.removeClass('hidden');
+    }
+  });
+
   const scrollVideo = async (e) => {
     const vidTop = video[0].getBoundingClientRect().top;
 
@@ -17,10 +25,11 @@ $(() => {
     if (outOfSightOnBottom && !topInFrame && !shouldPlay) {
       video[0].currentTime = 0;
       shouldPlay = true;
-      overlay.addClass('hidden')
+      overlayShown = false;
+      overlay.addClass('hidden');
     }
     if (topInFrame && shouldPlay) {
-      overlay.addClass('hidden')
+      overlay.addClass('hidden');
       await sleep(500);
       video[0].play();
       shouldPlay = false;
